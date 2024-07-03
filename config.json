@@ -1,0 +1,18 @@
+{
+  "name": "User Management",
+  "version": "1.0",
+  "slug": "user_management",
+  "description": "Manage users for the Wiegand Keypad/RFID/Fingerprint",
+  "arch": ["armv7", "armhf", "aarch64", "amd64", "i386"],
+  "startup": "services",
+  "boot": "auto",
+  "watchdog": true,
+  "options": {
+    "mqtt_broker": "192.168.1.10",
+    "mqtt_port": 1883
+  },
+  "schema": {
+    "mqtt_broker": "str",
+    "mqtt_port": "int"
+  }
+}
